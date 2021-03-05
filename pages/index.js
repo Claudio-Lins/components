@@ -1,5 +1,6 @@
 import FlipClock from "../components/Flip-clock";
 import Nav from '../components/Nav'
+import NavDrop from '../components/NavDrop'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
           Components <span className="text-blue-600">Tailwind CSS</span>
         </h1>
       </div>
-      <div className="justify-center border-2 mt-4 w-1/4 mx-auto px-8 py-4">
+      <div className="justify-center border-2 mt-4  mx-auto px-8 py-4">
         <div className="text-center flex justify-center">
           <h2 className="font-bold text-2xl mb-4">FlipClock</h2>
         </div>
@@ -24,6 +25,7 @@ export default function Home() {
         </div>
         <div>
           <Nav />
+          <NavDrop/>
         </div>
       </div>
     </>
