@@ -1,3 +1,4 @@
+
 export default function FlipClock() {
   return (
     <div className="flex justify-center mb-4">
@@ -40,12 +41,32 @@ export default function FlipClock() {
     </div>
   );
 }
+// var myVar = setInterval(myClock, 100);
 
-let myDate = new Date();
-let hs = zeroEsquerda(myDate.getHours());
-let mn = zeroEsquerda(myDate.getMinutes());
-let sg = zeroEsquerda(myDate.getSeconds());
 
+  let myDate = new Date();
+  let hs = myDate.getHours();
+  let mn = zeroEsquerda(myDate.getMinutes());
+  let sg = zeroEsquerda(myDate.getSeconds());
+
+
+function repetir() {
+  setInterval(myDate, 1000);
+}
 function zeroEsquerda(num) {
   return num >= 10 ? num : `0${num}`;
 }
+
+// function timer() {
+//   let myDate = new Date();
+//   let hs = zeroEsquerda(myDate.getHours());
+//   let mn = zeroEsquerda(myDate.getMinutes());
+//   let sg = zeroEsquerda(myDate.getSeconds());
+
+//   var myVar = setInterval(myDate, 1000);
+
+//   function zeroEsquerda(num) {
+//     return num >= 10 ? num : `0${num}`;
+//   }
+// }
+// timer()
