@@ -1,6 +1,7 @@
 import FlipClock from "../components/Flip-clock";
-import Nav from '../components/Nav'
-import NavDrop from '../components/NavDrop'
+import Nav from "../components/Nav";
+import NavDrop from "../components/NavDrop";
+import Post from "../components/Post";
 
 export default function Home() {
   return (
@@ -25,7 +26,8 @@ export default function Home() {
         </div>
         <div>
           <Nav />
-          <NavDrop/>
+          <NavDrop />
+          <Post />
         </div>
       </div>
     </>
