@@ -39,7 +39,7 @@ export const ModalTema = ({ showModal, setShowModal }) => {
         <div
           ref={modalRef}
           onClick={closeModal}
-          className="flex inset-0 absolute justify-center items-center p-8 bg-black min-h-screen - min-w-full bg-opacity-90"
+          className="flex inset-0 absolute justify-center items-center p-8 bg-red-400 min-h-screen - min-w-full bg-opacity-50"
         >
           <animated.div style={animation}>
             <div
@@ -49,7 +49,7 @@ export const ModalTema = ({ showModal, setShowModal }) => {
               <ModalDestak />
             </div>
             <div
-              className="absolute font-bold text-3xl cursor-pointer right-5 top-12 text-white"
+              className="absolute font-bold text-3xl cursor-pointer right-2 -top-6 text-white"
               aria-label="Close Modal"
               onClick={() => setShowModal((prev) => !prev)}
             >
